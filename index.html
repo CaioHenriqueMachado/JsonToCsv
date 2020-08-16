@@ -10,32 +10,32 @@
   <div class="container">
     <h1>JSON/CSV CONVERTER</h1>
     <div class="box">
-
-      <div class="base">
-        <h2>INPUT</h2>
-        <div class="text">
-          <textarea name="input" id="" cols="30" rows="15"></textarea>
+        <div class="base">
+          <h2>INPUT</h2>
+          <div class="text">
+            <textarea name="input" id="text" cols="30" rows="15"></textarea>
+          </div>
+          <div class="config">
+            <label for='selecao-arquivo'>Select to file &#187;</label>
+            <input id='selecao-arquivo' type='file'>
+            <div>
+              <button onclick="CSV2JSON()">CSV TO JSON</button>
+              <button onclick="JSON2CSV()">JSON TO CSV</button>
+            </div>
+          </div>
         </div>
-        <div class="config">
-          <label for='selecao-arquivo'>Select to file &#187;</label>
-          <input id='selecao-arquivo' type='file'>
-          <div>
-            <button>JSON TO CSV</button>
-            <button>CSV TO JSON</button>
+        <div class="base">
+          <h2>OUTPUT</h2>
+          <div class="text">
+            <textarea name="input" id="result" cols="30" rows="15" disabled></textarea>
+          </div>
+          <div class="config" onkeyup="leitor(value)">
+            <button>Download</button>
+            <button type="reset">Clear</button>
+            <button>Copy</button>
           </div>
         </div>
       </div>
-      <div class="base">
-        <h2>OUTPUT</h2>
-        <div class="text">
-          <textarea name="input" id="" cols="30" rows="15" disabled></textarea>
-      </div>
-      <div class="config">
-        <button>Download</button>
-        <button>Clear</button>
-        <button>Copy</button>
-      </div>
-    </div>
   </div>
 
   <script src="./js/script.js"></script>
