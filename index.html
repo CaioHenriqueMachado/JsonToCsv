@@ -30,7 +30,7 @@
             <textarea name="input" id="result" cols="30" rows="15" disabled></textarea>
           </div>
           <div class="config" onkeyup="leitor(value)">
-            <button>Download</button>
+            <button onclick="downloadFile()">Download</button>
             <button type="reset">Clear</button>
             <button>Copy</button>
           </div>
@@ -39,5 +39,6 @@
   </div>
 
   <script src="./js/script.js"></script>
+  <script src="./js/FileSaver.min.js"></script>
 </body>
 </html>

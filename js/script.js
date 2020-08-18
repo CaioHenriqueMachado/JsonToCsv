@@ -138,3 +138,14 @@ document.getElementById('file').onchange = function(){
   };
   reader.readAsText(file);
 };
+
+// WRITE FILE
+
+function downloadFile() {
+  // var text = $("#textarea").val();
+  var text = result.value;
+  var filename = 'converted';
+  var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
+
+  saveAs(blob, filename+".txt");
+};
