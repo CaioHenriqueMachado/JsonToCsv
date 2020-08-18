@@ -8,7 +8,8 @@ function JSON2CSV() {
   var json = '';
   var index = [];
   var toCsv = [];
-  var stringJson = '[\n';
+  var stringCsv = '';
+  var stringCsv2 = '';
   var valid = false;
 
   var texto = String(text.value);
@@ -25,38 +26,43 @@ function JSON2CSV() {
     }
  }
 
- index = json.split('},{');
+ json = json.replace(/:/g, ",");
+ json = json.replace("{", "");
+ json = json.replace(/},{/g, "|||");
+ json = json.replace("}", "");
+ index = json.split('|||');
+
 
 
   for (var i = 0; i < index.length; i++) {
-    // DAR UM REPLACE DE : PARA ,
     toCsv.push(index[i].split(','));
-    toCsv.push(index[i].split(':'));
   }
-  console.log(toCsv);
 
-//   for (var i = 1; i < toJson.length; i++) {
-//     stringJson +='{';
+  for (var i = 0; i < toCsv[0].length; i++) {
+    if (i % 2 == 0){
+      stringCsv += toCsv[0][i] +',';
+    }
+  }
+  
+  stringCsv += '|||';
+  stringCsv = stringCsv.replace(",|||", "\n");
 
-//     for (var j = 0; j < toJson[0].length; j++) {
-//       stringJson += '"' + toJson[0][j] + '":';
-//       stringJson += '"' + toJson[i][j] + '"';
-//       if (j != toJson[0].length - 1){
-//         stringJson += ',';
-//       }
-//     }
+  for (var i = 0; i < toCsv.length; i++) {
+    for (var j = 0; j < toCsv[i].length; j++) {
+      if (j % 2 != 0){
+        stringCsv += toCsv[i][j] +',';
+      }
+    }
+    stringCsv += '|||';
+    stringCsv = stringCsv.replace(",|||", "\n");
+  }
 
-//     if (i != toJson.length - 1){
-//       stringJson += '},\n';
-//     } else {
-//       stringJson += '}\n]';
-//     }
-//   }
+    stringCsv += stringCsv2;
 
   if (valid == false){
     result.value = "INPUT INVALID !!"
   } else {
-    result.value = index;
+    result.value = stringCsv;
   }
 }
 
