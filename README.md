@@ -16,7 +16,7 @@ converter de CSV pra json e vice versa
 
 <h1 align="center">Mobile Version</h1>
 <div align="center">
-  <img src="./img/mobileImg.png" alt="Mobile Version" height="500" width="40%">
+  <img src="./img/mobileImg.png" alt="Mobile Version" height="600" width="30%">
 </div>
 <img src="./img/line.png" alt="line" width="100%">
 <br>
