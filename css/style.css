@@ -104,7 +104,18 @@ div.config button {
 
 
 @media (max-width: 700px) {
+  div.box {
+    margin-top: 10px;
+  }
   div.base {
     width: 100%;
+  }
+
+  label {
+    padding: 0;
+  }
+
+  div.config button {
+    padding: 0;
   }
 }
