@@ -1,9 +1,5 @@
 <h1 align="center">JSON/CSV CONVERTER</h1>
 
-<div align="center">
-  <img src="./img/wll.svg" alt="Logo" height="150" width="150">
-</div>
-
 <h2 align="center">Conversor de CSV e JSON, podendo importar ou exportar arquivo de leitura</h2>
 
 <p align="center"><strong><a href="https://caiohenriquemachado.github.io/JsonToCsv/index.html">ACESSAR SITE</a></strong></p>
