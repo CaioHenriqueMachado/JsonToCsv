@@ -1,6 +1,3 @@
-# JsonToCsv
-converter de CSV pra json e vice versa
-
 <h1 align="center">JSON/CSV CONVERTER</h1>
 
 <div align="center">
@@ -18,16 +15,11 @@ converter de CSV pra json e vice versa
 <div align="center">
   <img src="./img/mobileImg.png" alt="Mobile Version" height="600" width="30%">
 </div>
-<img src="./img/line.png" alt="line" width="100%">
-<br>
 
 <h1 align="center">Web responsive Version </h1>
 <div align="center">
   <img src="./img/webImg.png" alt="Web Version" height="400" width="100%">
 </div>
-<img src="./img/line.png" alt="line" width="100%">
-<br>
-
 <img src="./img/line.png" alt="line" width="100%">
 <br>
 
